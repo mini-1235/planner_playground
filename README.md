@@ -5,7 +5,7 @@
 3. Send two goal poses, in my example:
 
 ```
-ros2 topic pub --once /goal_pose geometry_msgs/msg/PoseStamped "                                  ✘ INT root@mini1235-XPS-15-9520  15:05:32
+ros2 topic pub --once /goal_pose geometry_msgs/msg/PoseStamped "
 header:
   frame_id: map
 pose:
