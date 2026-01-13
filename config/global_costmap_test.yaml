@@ -2,3 +2,4 @@ global_costmap:
   global_costmap:
     ros__parameters:
       plugins: ["static_layer", "inflation_layer_global"]
+      resolution: 0.10

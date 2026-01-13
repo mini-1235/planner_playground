@@ -28,12 +28,18 @@ def generate_launch_description():
             Node(
                 package="tf2_ros",
                 executable="static_transform_publisher",
-                arguments=["0", "0", "0", "0", "0", "0", "map", "odom"],
+                arguments=[
+                    '--x', '0.0', '--y', '0.0', '--z', '0.0',
+                    '--roll', '0', '--pitch', '0', '--yaw', '0',
+                    '--frame-id', 'map', '--child-frame-id', 'odom']
             ),
             Node(
                 package="tf2_ros",
                 executable="static_transform_publisher",
-                arguments=["0", "0", "0", "0", "0", "0", "odom", "base_link"],
+                arguments=[
+                    '--x', '0.0', '--y', '0.0', '--z', '0.0',
+                    '--roll', '0', '--pitch', '0', '--yaw', '0',
+                    '--frame-id', 'odom', '--child-frame-id', 'base_link']
             ),
             Node(
                 package="nav2_map_server",
